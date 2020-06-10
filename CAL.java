@@ -7,27 +7,19 @@
  */
 public class CAL
 {
-    // 인스턴스 변수 - 다음의 예제를 사용자에 맞게 바꾸십시오
-    private int x;
-
+    private int cost;
     /**
-     * CAL 클래스의 객체 생성자
-     */
-    public CAL()
-    {
-        // 인스턴스 변수의 초기화
-        x = 0;
-    }
-
-    /**
-     * 예제 메소드 - 이 주석을 사용자에 맞게 바꾸십시오
+     * 할인대상을 확인해서 할인된 요금을 계산해주는 메소드
      * 
-     * @param  y   메소드의 예제 매개변수
-     * @return     x 더하기 y 
+     * @param  age   나이
+     * @param  old_version 구작(대여시작일로부터 6개월이상 경과된 작품)
+     * 
+     * @return cost  18세 이하는 10%할인, 65세이상은 20%할인, 구작(대여시작일로부터 6개월이상 경과된 작품)
+     *               은 반액 단, 2가지 이상의 할인적용조건이 중복되는 경우, 할인율이 높은 조건을 우선함.
      */
-    public int sampleMethod(int y)
+    public int CALcost(int y)
     {
-        // 여기에 코드를 작성하십시오.
-        return x + y;
+   
+        return cost;
     }
 }
