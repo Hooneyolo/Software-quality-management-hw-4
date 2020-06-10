@@ -2,8 +2,8 @@
 /**
  * 여기에 CAL 클래스 설명을 작성하십시오.
  * 
- * @author (작성자 이름) 
- * @version (버전번호나 날짜)
+ * @author (2018315005 유제훈) 
+ * @version (2020.06.10)
  */
 public class CAL
 {
