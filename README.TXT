@@ -4,9 +4,9 @@ Tell the reader (someone who does not know anything about this project)
 all he/she needs to know. The comments should usually include at least:
 ------------------------------------------------------------------------
 
-PROJECT TITLE:
+PROJECT TITLE: 실습#1
 PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
+VERSION or DATE: 2020.06.11
+HOW TO START THIS PROJECT: study for SoftwareQualityManagement
+AUTHORS:JEHUN YOO YOUNG JUNE TAE
 USER INSTRUCTIONS:
