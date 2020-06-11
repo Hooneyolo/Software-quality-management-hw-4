@@ -19,21 +19,25 @@ public class CalFee
      *               구작(대여시작일로부터 6개월이상 경과된 작품)은 반액
      *               단, 2가지 이상의 할인적용조건이 중복되는 경우, 할인율이 높은 조건을 우선함.
      */
-    public double Cal(int age, boolean old, int cost)
+    public double Cal(int age, boolean old, double cost)
     {
-        if (old == true){
-            this.cost = cost - (cost * 0.5 );
+        if (age >= 1 && old == true){           
+            cost = cost - (cost * 0.5);
         }
+        
         if (old == false){
             if(age >= 1 && age <= 18){
-                this.cost = cost - (cost * 0.1);
+                cost = cost - (cost * 0.1);
             }
             if(age >= 65){
-                this.cost = cost - (cost * 0.2);
+                cost = cost - (cost * 0.2);               
             }
         }
+        return cost;       
+    }
+}
 
-        // if(age >= 1 && age <= 18){
+// if(age >= 1 && age <= 18){
         // if(old == true){
         // this.cost = cost - (cost*0.5);
         // }
@@ -48,7 +52,4 @@ public class CalFee
         // else{
         // this.cost = cost - (cost*0.5);
         // }
-        return cost;
-    }
-}
  
