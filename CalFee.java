@@ -1,4 +1,3 @@
-
 /**
  * 렌탈 DVD 할인요금계산 소프트웨어
  * 
@@ -15,9 +14,9 @@ public class CalFee
      * @param  age   나이
      * @param  old 구작(대여시작일로부터 6개월이상 경과된 작품)
      * 
-     * @return cost  18세 이하는 10%할인, 65세이상은 20%할인
+     * @return cost - 18세 이하는 10%할인, 65세이상은 20%할인
      *               구작(대여시작일로부터 6개월이상 경과된 작품)은 반액
-     *               단, 2가지 이상의 할인적용조건이 중복되는 경우, 할인율이 높은 조건을 우선함.
+     *               단, 2가지 이상의 할인적용조건이 중복되는 경우, 할인율이 높은 조건을 우선함
      */
     public double Cal(int age, boolean old, double cost)
     {
@@ -36,20 +35,3 @@ public class CalFee
         return cost;       
     }
 }
-
-// if(age >= 1 && age <= 18){
-        // if(old == true){
-        // this.cost = cost - (cost*0.5);
-        // }
-        // this.cost = cost - (cost*0.1);
-        // }
-        // else if(age >= 65){
-        // if(old == true){
-        // this.cost = cost - (cost*0.5);
-        // }
-        // this.cost = cost - (cost*0.2);
-        // }
-        // else{
-        // this.cost = cost - (cost*0.5);
-        // }
- 
